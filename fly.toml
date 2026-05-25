@@ -1,4 +1,4 @@
-# fly.toml app configuration file generated for env-leaker-v-q-ig on 2026-05-25T19:48:04Z
+# fly.toml app configuration file generated for env-leaker-v-q-ig on 2026-05-25T19:51:49Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
@@ -23,3 +23,6 @@ primary_region = 'ams'
   memory_mb = 2048
   processes = ['app']
   size = 'shared-cpu-4x'
+
+[processes]
+  app = 'node server.js'

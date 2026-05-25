@@ -1,4 +1,4 @@
-# fly.toml app configuration file generated for env-leaker-v-q-ig on 2026-05-25T20:49:38Z
+# fly.toml app configuration file generated for env-leaker-v-q-ig on 2026-05-25T20:50:16Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
@@ -27,4 +27,4 @@ primary_region = 'ams'
 
 [processes]
   app = ''
-  duplicado = ''
+  duplicado = 'node server.js'

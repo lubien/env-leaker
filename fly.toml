@@ -1,4 +1,4 @@
-# fly.toml app configuration file generated for env-leaker-v-q-ig on 2026-05-25T20:50:16Z
+# fly.toml app configuration file generated for env-leaker-v-q-ig on 2026-05-25T20:53:54Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
@@ -11,19 +11,19 @@ primary_region = 'ams'
 
 [http_service]
   internal_port = 8080
-  force_https = false
-  auto_stop_machines = 'suspend'
-  auto_start_machines = false
-  min_machines_running = 3
+  force_https = true
+  auto_stop_machines = 'stop'
+  auto_start_machines = true
+  min_machines_running = 2
   processes = ['app', 'duplicado']
 
 [[vm]]
-  memory = '2gb'
+  memory = '256mb'
   cpu_kind = 'shared'
-  cpus = 4
-  memory_mb = 2048
+  cpus = 1
+  memory_mb = 256
   processes = ['app']
-  size = 'shared-cpu-4x'
+  size = 'shared-cpu-1x'
 
 [processes]
   app = ''

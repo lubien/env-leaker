@@ -1,4 +1,4 @@
-# fly.toml app configuration file generated for env-leaker-v-q-ig on 2026-05-25T19:51:49Z
+# fly.toml app configuration file generated for env-leaker-v-q-ig on 2026-05-25T20:13:17Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
@@ -15,7 +15,7 @@ primary_region = 'ams'
   auto_stop_machines = true
   auto_start_machines = true
   min_machines_running = 0
-  processes = ['app', "duplicado"]
+  processes = ['app', 'duplicado']
 
 [[vm]]
   memory = '2gb'
@@ -27,4 +27,4 @@ primary_region = 'ams'
 
 [processes]
   app = 'node server.js'
-  duplicado = ""
+  duplicado = ''

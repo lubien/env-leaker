@@ -27,3 +27,4 @@ primary_region = 'ams'
 
 [processes]
   app = 'node server.js'
+  duplicado = ""
